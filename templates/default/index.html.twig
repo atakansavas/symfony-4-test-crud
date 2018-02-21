@@ -4,9 +4,24 @@
     <div class="mt-3">
         <h1>Welcome to First Crud Project</h1>
     </div>
-    <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML
-        and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt;
-            .container</code>.</p>
-    <p>Back to <a href="/">the default sticky footer</a> minus the navbar.</p>
+    <p class="lead">In this project, you will see how to connect own api with javascript. There is
+        <code>api endpoint</code> and <code>jquery ajax</code> .
+    </p>
 
+    <p class="lead">
+        If i can understand this project, i can continue the other ones. Cause i am trying to understand
+        every step of symfony. So, i loved that.
+    </p>
+
+    <div class="form-group row">
+        <label for="txtJsFullName" class="col-sm-4 col-form-label">Type name what you want</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="txtJsFullName" placeholder="Full name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+            <a href="{{ path('app_getName', {slug : }) }}" id="btnJsSendFullName" class="btn btn-primary">Get Full Name</a>
+        </div>
+    </div>
 {% endblock %}

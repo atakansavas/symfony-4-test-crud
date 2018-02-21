@@ -21,4 +21,14 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/index.html.twig');
     }
+
+    /**
+     * @Route("/getName/{slug}", name="app_getName", methods={"POST"})
+     */
+    public function getName($slug)
+    {
+        //TODO - Connect the database and get full name of entity.
+        $changedName = "Full name is : " . $slug;
+        return new JsonResponse(['name' => $changedName]);
+    }
 }
